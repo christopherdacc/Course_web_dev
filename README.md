@@ -11,6 +11,12 @@ TP_1: backend programming (12/09/2025)
     7. Started the exercise
 
 TP_2: course + SQL (29/09/2025)
-    1.  Cours explanation (fonctions, equijointure, autojointure, jointure externes, sous-reqêtes, DML, adad)
+    1. Cours explanation (fonctions, equijointure, autojointure, jointure externes, sous-reqêtes, DML, adad)
     2. TD2 et TD3 (fini correction sur moodle)
     3. Cours
+
+TP_3: TP CSS (02/10/2025)
+    1. Fond de couleur CSS
+    2. Implement styles from other websites
+    3. JS cours
+    4. Jquery implementation
