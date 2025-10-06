@@ -20,3 +20,14 @@ TP_3: TP CSS (02/10/2025)
     2. Implement styles from other websites
     3. JS cours
     4. Jquery implementation
+
+TP_4: TP SGBDR Microsoft SQL Server  (06/10/2025)
+    1. chiffrement facultatif
+    2. create a new database (famille)
+    3. create the tables
+    4. definir les clefs etrangères
+    5. cree un diagramme de base de donné
+    6. faire une liaison de clefs étrangère
+    7. right click sur la base de donné and click taches then importer des données
+    8. Source de donné excel--> destination sql server native client 11.0--> Nexr --> changer la table destinatrice par la table crée
+    9.
