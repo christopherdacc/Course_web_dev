@@ -30,4 +30,10 @@ TP_4: TP SGBDR Microsoft SQL Server  (06/10/2025)
     6. faire une liaison de clefs étrangère
     7. right click sur la base de donné and click taches then importer des données
     8. Source de donné excel--> destination sql server native client 11.0--> Nexr --> changer la table destinatrice par la table crée
-    9.
+
+TP_5: TP JS (09/10/2025)
+    1. Suite jquery usage in javascript
+    2. change color of text using js
+    3. Temperature conversion using js
+    4. Automatic convertion while typing
+    5. Game multiplication correction in moodle
