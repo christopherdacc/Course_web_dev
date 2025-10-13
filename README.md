@@ -37,3 +37,8 @@ TP_5: TP JS (09/10/2025)
     3. Temperature conversion using js
     4. Automatic convertion while typing
     5. Game multiplication correction in moodle
+
+TP_6: TP SQL (13/10/2025)
+    1.  cours transact sql
+    2.  TP3 info32 
+    3.  
