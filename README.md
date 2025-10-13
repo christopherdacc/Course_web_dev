@@ -41,4 +41,9 @@ TP_5: TP JS (09/10/2025)
 TP_6: TP SQL (13/10/2025)
     1.  cours transact sql
     2.  TP3 info32 
-    3.  
+
+TP_7: TP PHP (13/10/2025)
+    1.  Cours PHP (introduction a PHP)
+    2.  Start of TP1 php
+    3.  New project php application
+    4.  TP1 info 33 Dubois-PHP
