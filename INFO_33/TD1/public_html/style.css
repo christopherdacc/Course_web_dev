@@ -1,0 +1,36 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 2 oct. 2025, 13:28:16
+    Author     : dacc0001
+*/
+
+p:hover{
+    background-color: aquamarine;
+    border: pink 10px solid;
+    background-image: url(https://media.licdn.com/dms/image/v2/D4E03AQFtHxxNpXiswg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1710162254495?e=2147483647&v=beta&t=fxUBGvxjhefG9sWPBcjR5ko1neqSynuSBE7FS6usrb8);
+    border-radius: 100px;
+    background-size: 50px;
+}
+div{
+    height: 150px;
+}
+.spinner {
+    width: 100px; /* or whatever size you want */
+    height: 100px;
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+    display: block;
+    margin: 20px auto; /* center it */
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,221 @@
+--Question II.1
+Select Npro, Libelle, PrixHT, QStock
+from produit;
+--Question II.2
+Select Distinct Ville
+from client;
+--Question II.3
+Select
+    Ncom as "Numéro de commande",
+    Ncli as "Numéro de client"
+from commande;
+--Question II.4
+Select Ncli
+from commande;
+--Question II.5
+Select Ncli, nom
+from client
+where Ville='Toulouse';
+--Question II.6
+Select Distinct ville
+from client
+where Cat='C1';
+--Question II.7
+Select Npro, Libelle, PrixHT, QStock
+from produit
+where Libelle like '%Canon%';
+--Question II.8
+Select nom, prenom
+from client
+where Cat in ('B1', 'C1')
+  and ville not in ('Lyon', 'Bordeaux')
+order by nom DESC;
+--Question II.9
+Select Ncli, nom
+from client 
+where prenom is NULL;
+--Question II.10
+Select Distinct Cat
+from client
+where Ville='Toulouse';
+--Question II.11
+Select 
+    SUM(compte)   as "Total des comptes",
+    MIN(compte)   as "Compte minimum",
+    AVG(compte)   as "Moyenne des comptes",
+    MAX(compte)   as "Compte maximum"
+from client;
+--Question II.12
+Select COUNT(NCom) as "Nombre de commandes passées"
+from commande;
+--Question II.13
+Select COUNT(Distinct Ncli) as "Nombre de clients"
+from commande;
+--Question II.14
+Select 
+    NPro as "Produit",
+    PrixHT * 0.21 as "Montant de la TVA"
+from produit
+where QStock > 120;
+--Question II.15
+Select
+    Ville as "Ville",
+    AVG(Compte) as "Moyenne",
+    MAX(Compte) - MIN(Compte) as "Écart-max",
+    COUNT(Ncli) as "Nombre"
+from client
+where Ville = 'Lyon'
+Group by ville;
+--Question II.16
+Select SUM(QStock * PrixHT) as "Valeur du stock Logitech"
+from produit
+where Libelle like '%Logitech%';
+--Question II.17 a)
+Select Ncom, DateCom
+from commande
+where Ncli in (
+    select Ncli
+    from client
+    where Ville = 'Lyon'
+);
+--Question II.17 b)
+Select c.Ncom, c.DateCom
+from commande as c
+join client as cl on c.Ncli = cl.Ncli
+where cl.Ville = 'Lyon';
+--Question II.18 a)
+Select distinct Ncli
+from commande
+where NCom in (
+    select Ncom
+    from detail
+    where Npro = 'CLA13'
+);
+--Question II.18 b)
+Select distinct Ncli
+from commande as c
+join detail as d on c.Ncom = d.NCom
+where d.Npro = 'CLA13';
+--Question II.19 a)
+Select Distinct Ville
+from client
+where NCli IN (
+    Select NCli
+    from commande
+    where NCom IN (
+        Select NCom
+        from detail
+        where NPro = 'CLA13'
+    )
+);
+--Question II.19 b)
+Select Distinct cl.Ville
+from client as cl
+join commande as c on cl.NCli = c.NCli
+join detail as d on c.NCom = d.NCom
+where d.NPro = 'CLA13';
+--Question II.20 a)
+Select NPro, Libelle
+from produit
+where NPro in (
+    Select NPro
+    from detail
+    where NCom in (
+        Select NCom
+        from commande
+        where NCli in (
+            Select NCli
+            from client
+            where Ville = 'Lyon'
+        )
+    )
+);
+--Question II.20 b)
+Select Distinct p.NPro, p.Libelle
+from produit p
+join detail as d on p.NPro = d.NPro
+join commande c on d.NCom = c.NCom
+join client cl on c.NCli = cl.NCli
+where cl.Ville = 'Lyon';
+--Question II.21
+Select NCli, Nom
+from client
+where Ville = (
+    Select Ville
+    from client
+    where NCli = 'B512'
+);
+--Question II.22
+Select NCli, Nom
+from client
+where Ville = (
+    Select Ville
+    from client
+    where NCli = 'B512'
+)
+and NCli != 'B512';
+--Question II.23
+Select c.NCom as "N° de commande ", 
+    cl.NCli as "N° de client", 
+    c.DateCom as "Date",
+    cl.Nom as "Nom", 
+    cl.Prenom as "Prénom", 
+    cl.Ville as "Ville"
+from commande as c
+join client as cl on c.NCli = cl.NCli
+order by nom ASC,
+    prenom ASC;
+--Question II.24
+Select c.NCom as "N° de commande ", 
+    cl.NCli as "N° de client", 
+    c.DateCom as "Date",
+    cl.Nom as "Nom", 
+    cl.Prenom as "Prénom", 
+    cl.Ville as "Ville",
+    d.NPro as "Numéro de produit commandés"
+from commande as c
+join client as cl on c.NCli = cl.NCli
+join detail as d on c.NCom = d.NCom
+order by nom ASC,
+    prenom ASC;
+--Question II.25
+Select 
+    cl.NCli as "Numéro client",
+    cl.Ville as "Ville",
+    COUNT(c.NCom) as "Nombre de commandes"
+from client cl
+join commande c on cl.NCli = c.NCli
+group by cl.NCli, cl.Ville
+having COUNT(c.NCom) in (1, 2)
+order by cl.NCli;
+--Question III.1
+Alter table client
+Add Telephone varchar(20) NULL;
+--Question III.2
+update client
+set Telephone = '0691201600'
+where NCli = 'B062';
+update client
+set Telephone = '0922584500'
+where NCli = 'C003';
+update client
+set Telephone = '0650542300'
+where NCli = 'C123';
+update client
+set Telephone = '0654201600'
+where NCli = 'C400';
+update client
+set Telephone = '0650456300'
+where NCli = 'F011';
+update client
+set Telephone = '0710845300'
+where NCli = 'F400';
+update client
+set Telephone = '0954241600'
+where NCli = 'K729';
+update client
+set Telephone = '0646547500'
+where NCli = 'S127';
+update client
+set Telephone = '0143311300'
+where NCli = 'S712';

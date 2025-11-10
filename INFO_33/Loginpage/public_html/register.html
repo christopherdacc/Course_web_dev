@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Page d'inscription</title>
+  <link rel="stylesheet" href="registration.css" />
+</head>
+<body>
+
+  <form action="#" method="post">
+    <h2>Inscription</h2>
+
+    <label>Titre</label>
+    <div class="radio-group">
+      <label><input type="radio" name="titre" value="M" required> M</label>
+      <label><input type="radio" name="titre" value="Mme"> Mme</label>
+    </div>
+
+    <label for="nom">Nom</label>
+    <input type="text" id="nom" name="nom" required>
+
+    <label for="prenom">Prénom</label>
+    <input type="text" id="prenom" name="prenom" required>
+
+    <label for="email">Adresse mail</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="tel">Numéro de téléphone</label>
+    <input type="tel" id="tel" name="tel" pattern="[0-9\s\-\+]{6,15}" placeholder="Ex: 0612345678" required>
+
+    <label for="pseudo">Pseudo</label>
+    <input type="text" id="pseudo" name="pseudo" required>
+
+    <label for="password">Mot de passe</label>
+    <input type="password" id="password" name="password" required minlength="6">
+
+    <label for="confirm-password">Confirmer le mot de passe</label>
+    <input type="password" id="confirm-password" name="confirm-password" required minlength="6">
+
+    <div class="checkbox-group">
+      <label><input type="checkbox" name="newsletter"> Je souhaite m'abonner à la newsletter</label>
+    </div>
+
+    <label for="commentaire">Espace commentaire</label>
+    <textarea id="commentaire" name="commentaire" placeholder="Votre message..."></textarea>
+
+    <button type="submit">S'inscrire</button>
+  </form>
+
+</body>
+</html>

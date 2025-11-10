@@ -1,0 +1,127 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+form {
+    font-family: sans-serif;
+    width: 30em;
+    border: 1px solid darkgray;
+    border-radius: 10px;
+    padding: 1em;
+}
+
+.intro{
+    text-indent: 80px;
+    font-size: 80px;
+    font-family: "Arial", Times, serif;
+    background-image: url(bibliotheque.jpg);
+    color: white;
+}
+
+nav {
+      background-color: black;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    nav ul li {
+      position: relative;
+    }
+
+    nav ul li a {
+      display: block;
+      padding: 15px 120px;
+      color: white;
+      text-decoration: none;
+    }
+
+    nav ul li a:hover {
+      background-color: #333;
+    }
+
+    nav ul li ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #222;
+      min-width: 160px;
+    }
+
+    nav ul li ul li a {
+      padding: 10px;
+      color: white;
+      display: block;
+    }
+
+    nav ul li ul li a:hover {
+      background-color: #444;
+    }
+
+    nav ul li:hover ul {
+      display: block;
+    }
+  
+  
+  
+    main{
+        width: 800px;              /* Fixed width for the rectangle */
+        margin: 40px auto;         /* Center horizontally and add vertical spacing */
+        padding: 50px;             /* Inner space */
+        border: 1px solid #333;    /* Rectangle border */
+        background-color: #f9f9f9; /* Light background */
+        text-align: left;          /* Keep text aligned left (default) */
+        font-family: sans-serif;
+        flex: 1;
+    }
+    
+    
+    footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: black;
+        color: white;          /* Make text visible on black */
+        padding: 15px 20px;    /* Some spacing */
+        text-align: right;      /* Align text to the left */
+        font-family: sans-serif;
+        z-index: 1000;
+    }
+    footer a {
+        color: #4da6ff;        /* Light blue for the email link */
+        text-decoration: none;
+    }
+    footer a:hover {
+        text-decoration: underline;
+}
+    
+
+
+
+form input {
+    border-radius: 4px;
+    border-style: solid;
+    padding: 0.5em;
+}
+
+form input[type="text"] {
+    width: 100%;
+    padding-left: 1em;
+}
+
+form input[type="password"] {
+    width: 100%;
+    padding-left: 1em;
+}
+form input[type="submit"] {
+    font-weight: bolder;
+    color: darkgray;
+}

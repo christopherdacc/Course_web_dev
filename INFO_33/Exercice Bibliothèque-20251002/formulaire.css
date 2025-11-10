@@ -1,0 +1,37 @@
+* { box-sizing: border-box; }
+
+form {
+    font-family: sans-serif;
+    width: 30em;
+    border: 1px solid darkgray;
+    border-radius: 10px;
+    padding: 1em;
+}
+
+form h1 {
+    border-bottom: 1px solid darkgray;
+}
+
+form label {
+    display: block;
+}
+
+form input {
+    border-radius: 4px;
+    border-style: solid;
+    padding: 0.5em;
+}
+
+form input[type="text"] {
+    width: 100%;
+    padding-left: 1em;
+}
+
+form input[type="password"] {
+    width: 100%;
+    padding-left: 1em;
+}
+form input[type="submit"] {
+    font-weight: bolder;
+    color: darkgray;
+}
