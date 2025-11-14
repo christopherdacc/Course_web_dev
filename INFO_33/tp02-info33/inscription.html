@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Inscription</title>
+    <link rel="stylesheet" href="formulaire.css">
+  </head>
+  <body>
+    <header>
+      <h1><a href="index.php">TP PHP-MySQL n°2 : Traitement de formulaire en PHP</a></h1>
+    </header>
+    <nav>
+      <!-- Insérer une barre de navigation ici -->
+    </nav>
+    <main>
+      <!-- **************************************** -->
+      <!-- Affichage du formulaire                  -->
+      <section class="section-formulaire">     
+        <h2>Inscription</h2>
+        <form action="inscription.php" method="POST">
+          <section>
+            <h3>Coordonnées</h3>
+            <p>
+              <label for="m">Civilité</label>
+              <label for="m"><input type="radio" id="m" name="civilite" value="H"> M</label>
+              <label for="mme"><input type="radio" id="mme" name="civilite" value="F"> Mme</label>
+            </p>
+            <div class="deux-champs">
+              <p>
+                <label for="nom">Nom </label>
+                <input type="text" id="nom" name="nom" placeholder="Nom"  value="" maxlength="100" required>
+              </p>
+              <p>
+                <label for="prenom">Prénom </label>
+                <input type="text" id="prenom" name="prenom" placeholder="Prénom"  value="" maxlength="100" required>
+              </p>
+            </div>
+            <p>
+              <label for="mail">Adresse Mail </label>
+              <input type="email" id="mail" name="mail" placeholder="Adresse Mail"  value="" maxlength="250" required>
+            </p>
+            <p>
+              <label for="telephone">Numéro de téléphone </label>
+              <input type="tel" id="telephone" name="telephone" placeholder="Numéro de téléphone (facultatif)"  value="" maxlength="50">
+            </p>
+          </section>
+          <section>
+            <h3>Informations de connexion</h3>
+            <p>
+              <label for="pseudo">Pseudo </label>
+              <input type="text" id="pseudo" name="pseudo" placeholder="Pseudo" value="" minlength="5" maxlength="10" required>
+            </p>  
+            <div class="deux-champs">
+              <p>
+                <label for="passe1">Mot de passe </label>
+                <input type="password" id="passe1" name="passe1" placeholder="Mot de passe" value="" minlength="6" required>
+              </p>  
+              <p>
+                <label for="passe2">Confirmer le mot de passe </label>
+                <input type="password" id="passe2" name="passe2" placeholder="Mot de passe" value="" minlength="6" required>
+              </p>
+            </div>
+          </section>
+          <section>
+            <h3>Divers</h3>
+            <p>
+              <input type="checkbox" id="abo_newsletter" name="abo_newsletter" value="">
+              <label for="abo_newsletter">Abonnement à la newsletter</label>
+            </p>
+            <p>
+              <label for="commentaire">Commentaire</label>
+              <textarea id="commentaire" name="commentaire" placeholder="Laissez un commentaire" rows="2"></textarea>
+            </p>
+          </section>
+          <section>
+            <p><input type="submit" name="inscrire" value="S'inscrire"></p>
+          </section>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <!-- Insérer un pied de page ici -->
+    </footer>
+  </body>
+</html>

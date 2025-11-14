@@ -50,3 +50,6 @@ TP_7: TP PHP (13/10/2025)
 
 TP_8: TP PHP (07/11/2025)
     1.  
+TP_9: TP PHP et MySQL (14/11/2025)
+    1.  Using MySQLi
+    2.  
