@@ -53,3 +53,6 @@ TP_8: TP PHP (07/11/2025)
 TP_9: TP PHP et MySQL (14/11/2025)
     1.  Using MySQLi
     2.  
+
+TP_10: TP SQL (01/12/2025)
+    1.  tp transact sql
