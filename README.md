@@ -56,3 +56,11 @@ TP_9: TP PHP et MySQL (14/11/2025)
 
 TP_10: TP SQL (01/12/2025)
     1.  tp transact sql
+
+TP_11: TP INFO 31 (01/12/2025)
+    1. Cours C++
+    2. Année bissextile
+
+TP_12: TP INFO 31 (02/12/2025)
+    1. Code avec les parenthèses 
+    2.
