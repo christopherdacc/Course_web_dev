@@ -64,3 +64,6 @@ TP_11: TP INFO 31 (01/12/2025)
 TP_12: TP INFO 31 (02/12/2025)
     1. Code avec les parenthèses 
     2.
+
+TP_13: TP INFO 33 (15/12/2025)
+    1.  
