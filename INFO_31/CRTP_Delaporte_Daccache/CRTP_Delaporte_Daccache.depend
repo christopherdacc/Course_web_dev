@@ -1,0 +1,28 @@
+# depslib dependency file v1.0
+1768308174 source:c:\users\dacc0001\documents\github\course_web_dev\info_31\crtp_delaporte_daccache\main.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+
+1768313699 source:c:\users\dacc0001\documents\github\course_web_dev\info_31\crtp_delaporte_daccache\grille.cpp
+	"morpion.h"
+
+1768313656 c:\users\dacc0001\documents\github\course_web_dev\info_31\crtp_delaporte_daccache\morpion.h
+	<iostream>
+	<vector>
+	<string>
+	<stdexcept>
+
+1768309428 source:c:\users\dacc0001\documents\github\course_web_dev\info_31\crtp_delaporte_daccache\joueur.cpp
+	"morpion.h"
+	<cstdlib>
+
+1768313936 source:c:\users\dacc0001\documents\github\course_web_dev\info_31\crtp_delaporte_daccache\morpion.cpp
+	"morpion.h"
+	<ctime>
+	<cstdlib>
+	<limits>
+
+1768313856 source:c:\users\dacc0001\documents\github\course_web_dev\info_31\crtp_delaporte_daccache\partie.cpp
+	"morpion.h"
+

@@ -1,0 +1,26 @@
+# depslib dependency file v1.0
+1768311844 source:c:\users\dacc0001\documents\github\course_web_dev\info_31\test\grille.cpp
+	"morpion.h"
+
+1768313310 c:\users\dacc0001\documents\github\course_web_dev\info_31\test\morpion.h
+	<iostream>
+	<vector>
+	<string>
+	<stdexcept>
+
+1768312125 source:c:\users\dacc0001\documents\github\course_web_dev\info_31\test\joueur.cpp
+	"morpion.h"
+	<limits>
+	<cstdlib>
+	<thread>
+	<chrono>
+
+1768312694 source:c:\users\dacc0001\documents\github\course_web_dev\info_31\test\partie.cpp
+	"morpion.h"
+
+1768312979 source:c:\users\dacc0001\documents\github\course_web_dev\info_31\test\morpion.cpp
+	"morpion.h"
+	<ctime>
+	<cstdlib>
+	<limits>
+
