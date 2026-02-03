@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1770128642 source:c:\users\dacc0001\documents\github\course_web_dev\info_31\itp\itp-daccache-delaporte.cpp
+	<iostream>
+	<stdexcept>
+	<limits>
+	<algorithm>
+
