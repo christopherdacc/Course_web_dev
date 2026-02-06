@@ -1,0 +1,154 @@
+html {
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  color: black;
+  background-color: white;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+main {
+  min-height: 600px !important;
+}
+
+/*
+ * En-tete
+ */
+.entete {
+  height: 7em;
+  background-image: url(bibliotheque.jpg);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.entete h1 {
+  font-size: 5em;
+  margin: 0 0 0 0.5em;
+}
+
+/* 
+ * Pied de page
+ */
+.pied-de-page {
+  text-align: right;
+  background-color: black;
+  color: white;
+  height: 2em;
+  margin: 0px;
+  padding: 0px;
+  display: flex; /* contexte sur le parent */
+  flex-direction: column; /* direction d'affichage verticale */
+  justify-content: center; /* alignement vertical */
+}
+
+.pied-de-page a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.pied-de-page a:hover {
+  color: grey;
+}
+
+/*
+ * Corps
+ */
+.accueil {
+  margin: 1em auto;
+  padding: 1em;
+  width: 700px;
+  border: 1px solid black;
+  border-radius: 0.3em;
+}
+
+.accueil h1 {
+  margin: 0;
+  padding: 0 0 1rem 0;
+  font-size: 2em;
+  font-weight: 700;
+}
+
+/*
+ * Barre de navigation
+ */
+.menu {
+  position: relative;
+  height: 3em;
+  min-width: 700px;
+  background-color: black;
+}
+
+.menu li {
+  background-color: black;
+  text-align: center;
+  width: 8em;
+  line-height: 2.5em;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  color: grey;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+  vertical-align: top;
+}
+.menu > ul > li > ul {
+  display: none;
+}
+
+.menu > ul > li:hover > ul {
+  display: block;
+}
+
+/* ********************************************* */
+/*  Liste des ouvrages                           */
+/*                                               */
+/*  QUESTION II.2                                */
+/*  ECRIRE VOTRE CODE ICI                        */
+
+.section-affichage-livres table{
+  colot: black;
+  margin: 1em;
+  text-decoration: none;
+  padding: 1em;
+  width: 100%;
+  border: 1px solid rgba(34,36,38,.15);
+  border-radius: 0.3em;  
+}
+.section-affichage-livres{
+  colot: black;
+  text-decoration: none;
+}
+.section-affichage-livres .selection{
+  colot: black;
+  text-decoration: none; 
+}
+
+
+/* ********************************************* */
+/*  Fiche livre                                  */
+/*                                               */
+/*  QUESTION III.1                               */
+/*  ECRIRE VOTRE CODE ICI                        */
+
+
+
+/* ********************************************* */
